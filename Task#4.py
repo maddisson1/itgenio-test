@@ -85,3 +85,19 @@ def search_by_point(stop_name):
             bus.info()
     else:
         print("Not found")  
+
+while True:
+    print('-------------------------------------')
+    print("1. Create autopark\n2. Show autopark\n3. Sort by number\n4. Search by point")
+    option = int(input('Choose an option, please: '))
+    if option == 1:
+        create_autopark()
+    elif option == 2:
+        show_autopark()
+    elif option == 3:
+        sort_by_number()
+    elif option == 4:
+        stop_name = input('Enter the destination name: ')
+        search_by_point(stop_name)
+    else:
+        print('Please, enter the right option')
